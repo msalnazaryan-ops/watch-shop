@@ -1,0 +1,769 @@
+/* =========================================
+   Navbar Styling
+   ========================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    opacity: 0.6;
+}
+
+.atelier-link {
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    position: relative;
+}
+
+.atelier-link span {
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+    font-style: italic;
+    font-size: 15px;
+    margin-left: 4px;
+    text-transform: none;
+}
+
+.nav-center-logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: #000000;
+}
+
+.nav-icon {
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-size: 22px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* =========================================
+   Dropdown Parent
+   ========================================= */
+
+.nav-item-dropdown {
+    position: relative;
+}
+
+
+/* =========================================
+   ALL DROPDOWN MENUS
+   ========================================= */
+
+.mega-menu,
+.collections-menu {
+    display: none;
+}
+
+.mega-menu.active,
+.collections-menu.active {
+    display: block;
+}
+
+
+/* =========================================
+   WATCHES - MEGA MENU
+   ========================================= */
+
+.mega-menu {
+    position: absolute;
+    top: calc(100% + 25px);
+    left: 0;
+    transform: translateX(-55px);
+
+    width: 950px;
+
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+
+    z-index: 99999;
+
+    padding: 35px 50px;
+}
+
+.mega-menu-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   Watches - Left Column
+   ========================================= */
+
+.mega-col-left {
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    border-right: 1px solid #eeeeee;
+
+    padding-right: 35px;
+}
+
+.menu-category-group h4,
+.menu-recommended h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+
+    color: #000;
+
+    font-weight: 600;
+}
+
+.menu-category-group a {
+    display: block;
+
+    font-size: 14px;
+    color: #333;
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    transition: color 0.2s;
+}
+
+.menu-category-group a:hover {
+    color: #000;
+}
+
+
+/* =========================================
+   Recommended Grid
+   ========================================= */
+
+.rec-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+.rec-item {
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+.rec-item img {
+    width: 100%;
+    height: 65px;
+
+    object-fit: cover;
+
+    margin-bottom: 4px;
+
+    background: #f4f4f4;
+}
+
+
+/* =========================================
+   Watches - Right Column
+   ========================================= */
+
+.mega-col-right {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.background-watch-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ապահովում է, որ վիդեոն չձևափոխվի և լցնի ամբողջ տարածքը */
+    z-index: 1;        /* Որպեսզի լինի հետևի մասում */
+}
+
+/* Որպեսզի տեքստը վիդեոյի վրայով լավ երևա */
+.atelier-overlay-content {
+    position: relative;
+    z-index: 2;
+}
+
+.watch-section-block {
+    border-bottom: 1px solid #eeeeee;
+
+    padding-bottom: 15px;
+}
+
+.section-header-row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.section-header-row h3 {
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+.shop-all-link {
+    font-size: 11px;
+
+    color: #000;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   Watches Items Grid
+   ========================================= */
+
+.watch-items-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px 30px;
+}
+
+.watch-items-grid a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 13px;
+
+    transition: opacity 0.2s;
+}
+
+.watch-items-grid a:hover {
+    opacity: 0.7;
+}
+
+.watch-items-grid img {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+
+    background: #f9f9f9;
+
+    padding: 2px;
+}
+
+
+/* =========================================
+   COLLECTIONS MENU
+   ========================================= */
+
+.collections-menu {
+    position: absolute;
+
+    top: calc(100% + 25px);
+    left: 0;
+
+    transform: translateX(-170px);
+
+    width: 720px; /* Լայնությունը մեծացրինք, որ նկարը տեղավորվի */
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+    z-index: 99999;
+
+    padding: 25px 30px;
+
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Collections Header
+   ========================================= */
+
+.collections-header {
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #000000;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    margin-bottom: 5px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   Collections List
+   ========================================= */
+
+.collections-list {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.collections-list li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.collections-list li:last-child {
+    border-bottom: none;
+}
+
+.collections-list a {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 14px 0;
+
+    text-decoration: none;
+
+    transition: opacity 0.2s;
+}
+
+.collections-list a:hover {
+    opacity: 0.6;
+}
+
+.col-title {
+    font-size: 20px;
+
+    font-weight: 400;
+
+    color: #333333;
+
+    margin-bottom: 4px;
+}
+
+.col-count {
+    font-size: 13px;
+
+    color: #777777;
+
+    font-weight: 300;
+}
+
+
+/* =========================================
+   TIMEX ATELIER MENU
+   ========================================= */
+.atelier-menu-dropdown {
+    display: none;
+    position: fixed;
+    top: 73px;
+    left: 0;
+    width: 60vw;
+    height: calc(100vh - 73px);
+    background-color: #000000;
+    z-index: 9999;
+    box-sizing: border-box;
+    box-shadow: 15px 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.atelier-menu-dropdown.active {
+    display: flex;
+}
+
+
+/* =========================================
+   Atelier - Left Pane
+   ========================================= */
+.atelier-left-pane {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.atelier-right-pane {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background: #000;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+/*.atelier-left-pane {*/
+/*    position: relative;*/
+
+/*    width: 50%;*/
+/*    height: 100%;*/
+
+/*    overflow: hidden;*/
+/*}*/
+
+.background-watch-image {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.atelier-overlay-content {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    height: 100%;
+
+    padding: 40px;
+
+    background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9),
+            transparent
+    );
+}
+
+.atelier-overlay-content h2 {
+    font-size: 26px;
+
+    font-weight: 300;
+
+    margin-bottom: 15px;
+
+    color: #fff;
+}
+
+.atelier-actions {
+    display: flex;
+
+    gap: 20px;
+}
+
+.atelier-actions a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #fff;
+
+    padding-bottom: 2px;
+}
+
+
+/* =========================================
+   Atelier - Right Pane
+   ========================================= */
+
+/*.atelier-right-pane {*/
+/*    width: 50%;*/
+/*    height: 100%;*/
+
+/*    display: flex;*/
+
+/*    align-items: center;*/
+
+/*    padding: 0 30px;*/
+
+/*    background-color: #000000;*/
+
+/*    overflow-y: auto;*/
+
+/*    box-sizing: border-box;*/
+/*}*/
+/*///////////////////////////////////////////////////////////////*/
+/* Օգտատիրոջ անունը և Log out-ը ստանում են մյուս մենյուների բարերի հատկանիշները */
+#userDisplayContainer .nav-link {
+    color: inherit; /* Ժառանգում է ընթացիկ հեդերի գույնը */
+    transition: color 0.3s ease;
+}
+
+/* Եթե հեդերը կամ մենյուն բացված/սև վիճակում է (կախված ձեր կլասների անուններից, օրինակ՝ .scrolled, .dark-header կամ բացված մենյուների դասերը) */
+/* Օրինակ՝ մութ ֆոնի կամ սև մենյուի ժամանակ դարձնել սպիտակ */
+.dark-theme #userDisplayContainer .nav-link,
+.atelier-menu-open #userDisplayContainer .nav-link,
+header.scrolled #userDisplayContainer .nav-link {
+    color: #ffffff !important;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+.atelier-watch-list {
+    list-style: none;
+
+    width: 100%;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.atelier-watch-list li {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #222;
+
+    cursor: pointer;
+}
+
+.watch-title {
+    font-size: 14px;
+
+    color: #ffffff;
+
+    font-weight: 400;
+}
+
+
+
+
+/* =========================================
+   NAVBAR DARK MODE - ATELIER
+   ========================================= */
+
+.navbar.navbar-dark-mode {
+    background-color: #000000;
+
+    border-bottom: 1px solid #222222;
+}
+
+.navbar.navbar-dark-mode .nav-left a,
+.navbar.navbar-dark-mode .nav-right a,
+.navbar.navbar-dark-mode .nav-center-logo,
+.navbar.navbar-dark-mode .logo h1,
+.navbar.navbar-dark-mode .nav-icon {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   ATELIER ACTIVE LINE
+   ========================================= */
+
+.atelier-link.active::after {
+    content: '';
+
+    position: absolute;
+
+    bottom: -22px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #ffffff;
+}
+
+/* Collections նկարի ոճերը */
+#hover-image {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.watch-thumb {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.watch-thumb img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+/*/////////////////*/
+/* Co_Labs Մենյուի Ճիշտ CSS Կարգավորումները */
+.colabs-menu {
+    display: none;
+    position: fixed; /* Ֆիքսում ենք էկրանի նկատմամբ */
+    top: 70px;       /* Կարգավորիր ըստ քո նավբարի բարձրության (օրինակ՝ 60px կամ 70px) */
+    left: 0;         /* Կպնում է էկրանի ձախ եզրին */
+    width: 520px;    /* Սահմանափակում ենք լայնությունը, որ ամբողջ էկրանով չբացվի */
+    height: 650px;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+/*.colabs-inner {*/
+/*    padding: 25px 30px;*/
+/*}*/
+
+.colabs-inner {
+    padding: 25px 30px;
+    max-width: 1200px; /* Ցանկության դեպքում կարող եք սահմանափակել կամ թողնել լիարժեք */
+    margin: 0 auto;
+}
+
+.colabs-header-row {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+}
+
+.colabs-header-row span {
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.colabs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.colabs-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.colabs-list li:last-child {
+    border-bottom: none;
+}
+
+.colabs-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 3px;
+}
+
+.colabs-count {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Collections ներքին դասեր */
+.collections-content-wrapper {
+    display: flex;
+    gap: 30px;
+}
+.collections-left-col {
+    flex: 1;
+}
+.collections-image-wrapper {
+    width: 180px;
+    flex-shrink: 0;
+    position: relative;
+}
+.collections-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}

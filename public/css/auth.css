@@ -1,0 +1,204 @@
+/* =========================================
+   Auth Modal Styling
+   ========================================= */
+
+.auth-modal-overlay {
+    display: none; /* Սկզբում թաքցված է */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999999;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.auth-modal-overlay.active {
+    display: flex;
+}
+
+.auth-modal-container {
+    position: relative;
+    display: flex;
+    width: 850px;
+    height: 520px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.auth-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+    transition: color 0.2s;
+}
+
+.auth-close-btn:hover {
+    color: #000;
+}
+
+/* Ձախ նկարով կողմ */
+.auth-image-side {
+    position: relative;
+    width: 45%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.auth-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+.auth-image-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    color: #fff;
+    z-index: 2;
+}
+
+.auth-image-content h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.auth-image-content p {
+    font-size: 13px;
+    color: #ccc;
+    font-weight: 300;
+}
+
+/* Աջ ֆորմայի կողմ */
+.auth-form-side {
+    width: 55%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column; /* Ուղղված տարբերակը */
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.auth-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.auth-tab-btn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #888;
+    cursor: pointer;
+    padding-bottom: 5px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.auth-tab-btn.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.auth-tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+.auth-form h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.auth-form p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.auth-input-group {
+    margin-bottom: 15px;
+}
+
+.auth-input-group label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 600;
+}
+
+.auth-input-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.auth-input-group input:focus {
+    border-color: #000;
+}
+
+.auth-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+.auth-submit-btn:hover {
+    opacity: 0.8;
+}

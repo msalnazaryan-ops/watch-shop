@@ -1,0 +1,66 @@
+<!-- Auth Modal Overlay -->
+<div id="authModal" class="auth-modal-overlay">
+    <div class="auth-modal-container">
+        <!-- Փակելու կոճակ -->
+        <button id="closeAuthModal" class="auth-close-btn">&times;</button>
+
+        <!-- Ձախ կողմ - Ժամացույցի նկարով բլոկ -->
+        <div class="auth-image-side">
+            <img src="/images/watch2.png" alt="Timex Watch">
+            <div class="auth-image-content">
+                <h3>TIMEX LUXE</h3>
+                <p>Discover timeless elegance and precision.</p>
+            </div>
+        </div>
+
+        <!-- Աջ կողմ - Ֆորմայի բլոկ -->
+        <div class="auth-form-side">
+            <div class="auth-tabs">
+                <button class="auth-tab-btn active" data-target="loginTab">Sign In</button>
+                <button class="auth-tab-btn" data-target="registerTab">Register</button>
+            </div>
+
+            <!-- Sign In Form -->
+            <form id="loginTab" class="auth-form active">
+                <h2>Welcome Back</h2>
+                <p>Please enter your details to sign in.</p>
+
+                <div class="auth-input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="auth-input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">Sign In</button>
+            </form>
+
+            <!-- Register Form -->
+            <!-- Register Form -->
+            <form id="registerTab" class="auth-form">
+                <h2>Create Account</h2>
+                <p>Join us to explore exclusive collections.</p>
+
+                <div class="auth-input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="auth-input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="auth-input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+</div>

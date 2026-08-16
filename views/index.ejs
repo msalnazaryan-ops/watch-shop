@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMEX - Cavatina Luxe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+
+<!-- Նավիգացիա -->
+<%- include('partials/header') %>
+
+<!-- Գլխավոր բաժին (Hero) -->
+<%- include('partials/hero') %>
+
+<!-- Best Sellers Section -->
+<%- include('partials/categories') %>
+
+<!-- Our Most-Loved Styles Carousel Section -->
+<%- include('partials/carousel') %>
+
+<!-- Video Showcase Section -->
+<%- include('partials/video-showcase') %>
+
+<!-- Quote Section -->
+<%- include('partials/quote') %>
+
+<!-- Story/Sticky Showcase Section -->
+<%- include('partials/story') %>
+
+<!-- Footer Section -->
+<%- include('partials/footer') %>
+
+<%- include('partials/auth-modal') %>
+
+<script src="/js/main.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>TIMEX - Cavatina Luxe</title>-->
+<!--    <link rel="stylesheet" href="/css/style.css">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--&lt;!&ndash; Նավիգացիա &ndash;&gt;-->
+<!--<header class="navbar">-->
+<!--    <div class="nav-links">-->
+<!--        <a href="#">Watches</a>-->
+<!--        <a href="#">Collections</a>-->
+<!--        <a href="#">Co_Labs</a>-->
+<!--        <a href="#">TIMEX Atelier</a>-->
+<!--    </div>-->
+<!--    <div class="logo">-->
+<!--        <h1>T I M E X</h1>-->
+<!--    </div>-->
+<!--    <div class="nav-right">-->
+<!--        <a href="#">Blog</a>-->
+<!--        <a href="#">Explore</a>-->
+<!--        <a href="#">⚲</a>-->
+<!--        <a href="#">👤</a>-->
+<!--        <a href="#">🛒</a>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--&lt;!&ndash; Գլխավոր բաժին (Hero) &ndash;&gt;-->
+<!--<main class="hero">-->
+<!--    <div class="hero-content">-->
+<!--        <span class="subtitle">Cavatina® Luxe</span>-->
+<!--        <h2>The Name<br>Says It All</h2>-->
+<!--        <p>A New Take On Cavatina®</p>-->
+<!--        <a href="#" class="shop-btn">Shop Now →</a>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Այստեղ է նորացված հատվածը &ndash;&gt;-->
+<!--    <div class="hero-visual">-->
+<!--        <img src="/images/watch.png" alt="Gold Tone Watch">-->
+<!--    </div>-->
+<!--</main>-->
+
+<!--&lt;!&ndash; Best Sellers Section &ndash;&gt;-->
+<!--<section class="categories-section">-->
+<!--    <div class="category-card">-->
+<!--        <img src="/images/mens-watch.jpg" alt="Men's Best Sellers">-->
+<!--        <div class="category-content">-->
+<!--            <span class="category-subtitle">Men's Best Sellers</span>-->
+<!--            <h3>Shop Now</h3>-->
+<!--            <a href="#" class="category-link">→</a>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="category-card">-->
+<!--        <img src="/images/womens-watch.jpg" alt="Women's Best Sellers">-->
+<!--        <div class="category-content">-->
+<!--            <span class="category-subtitle">Women's Best Sellers</span>-->
+<!--            <h3>Shop Now</h3>-->
+<!--            <a href="#" class="category-link">→</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Our Most-Loved Styles Carousel Section &ndash;&gt;-->
+<!--<section class="loved-styles-section">-->
+<!--    <div class="loved-header">-->
+<!--        <h2>Our Most-Loved Styles</h2>-->
+<!--        <div class="carousel-arrows">-->
+<!--            <button class="arrow-btn prev-btn" onclick="scrollCarousel(-1)">&#8592;</button>-->
+<!--            <button class="arrow-btn next-btn" onclick="scrollCarousel(1)">&#8594;</button>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="carousel-container" id="carouselContainer">-->
+<!--        &lt;!&ndash; Ժամացույց 1 &ndash;&gt;-->
+<!--        <div class="product-card">-->
+<!--            <div class="product-img-box">-->
+<!--                <img src="/images/style-1.jpg" alt="Waterbury Heritage Chronograph">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <p class="product-title">Waterbury Heritage Chronograph 39mm Leather Strap Watch</p>-->
+<!--                <div class="product-rating">★★★★★</div>-->
+<!--                <p class="product-price">$309.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Ժամացույց 2 &ndash;&gt;-->
+<!--        <div class="product-card">-->
+<!--            <div class="product-img-box">-->
+<!--                <img src="/images/style-2.jpg" alt="Timex Legacy Day and Date">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <p class="product-title">Timex Legacy Day and Date 36mm Stainless Steel Bracelet Watch</p>-->
+<!--                <div class="product-rating">★★★★☆</div>-->
+<!--                <p class="product-price">$179.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Ժամացույց 3 &ndash;&gt;-->
+<!--        <div class="product-card">-->
+<!--            <div class="product-img-box">-->
+<!--                <img src="/images/style-3.jpg" alt="Timex Automatic 1983">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <p class="product-title">Timex® Automatic 1983 E Line Reissue 34mm Stainless Steel Watch</p>-->
+<!--                <div class="product-rating">★★★★★</div>-->
+<!--                <p class="product-price">$279.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Ժամացույց 4 &ndash;&gt;-->
+<!--        <div class="product-card">-->
+<!--            <div class="product-img-box">-->
+<!--                <img src="/images/style-4.jpg" alt="Timex 1995 Intrepid Reissue">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <p class="product-title">Timex 1995 Intrepid Reissue 46mm Strap Watch</p>-->
+<!--                <div class="product-rating">★★★★☆</div>-->
+<!--                <p class="product-price">$229.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Ժամացույց 5 &ndash;&gt;-->
+<!--        <div class="product-card">-->
+<!--            <div class="product-img-box">-->
+<!--                <img src="/images/style-5.jpg" alt="Style 5 Watch">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <p class="product-title">Timex Standard 38mm Leather Strap Watch</p>-->
+<!--                <div class="product-rating">★★★★★</div>-->
+<!--                <p class="product-price">$149.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Ժամացույց 6 &ndash;&gt;-->
+<!--        <div class="product-card">-->
+<!--            <div class="product-img-box">-->
+<!--                <img src="/images/style-6.jpg" alt="Style 6 Watch">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <p class="product-title">Timex Marlin Hand-Wound 34mm Leather Strap Watch</p>-->
+<!--                <div class="product-rating">★★★★★</div>-->
+<!--                <p class="product-price">$219.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Ժամացույց 7 &ndash;&gt;-->
+<!--        <div class="product-card">-->
+<!--            <div class="product-img-box">-->
+<!--                <img src="/images/style-7.jpg" alt="Style 7 Watch">-->
+<!--            </div>-->
+<!--            <div class="product-info">-->
+<!--                <p class="product-title">Timex Expedition Scout 40mm Canvas Strap Watch</p>-->
+<!--                <div class="product-rating">★★★★☆</div>-->
+<!--                <p class="product-price">$89.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Video Showcase Section &ndash;&gt;-->
+<!--<section class="interactive-showcase">-->
+<!--    &lt;!&ndash; Հետևի պտտվող տեսանյութը &ndash;&gt;-->
+<!--    <div class="showcase-bg">-->
+<!--        <video autoplay muted loop playsinline>-->
+<!--            <source src="/videos/watch-video.mp4" type="video/mp4">-->
+<!--            Ձեր բրաուզերը չի աջակցում տեսանյութ:-->
+<!--        </video>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Աջ կողմի սպիտակ քարտը &ndash;&gt;-->
+<!--    <div class="showcase-content-wrapper">-->
+<!--        <div class="showcase-card">-->
+<!--            <div class="showcase-img-box">-->
+<!--                <img src="/images/style-3.jpg" alt="Q Timex Marbella 40.5mm">-->
+<!--            </div>-->
+<!--            <div class="showcase-info">-->
+<!--                <h3>Q Timex Marbella 40.5mm Stainless Steel Bracelet Watch</h3>-->
+<!--                <p class="showcase-specs">40.5 mm | 2 Colors</p>-->
+<!--                <p class="showcase-price">$219.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Quote Section &ndash;&gt;-->
+<!--<section class="quote-section">-->
+<!--    <h2>Every watch has<br>a soul and a story<br>to be told.</h2>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Story/Sticky Showcase Section &ndash;&gt;-->
+<!--<div class="story-wrapper">-->
+<!--    &lt;!&ndash; Քարտ 1: Peanuts x Timex &ndash;&gt;-->
+<!--    <section class="story-section" id="story-1">-->
+<!--        <div class="story-content">-->
+<!--            <span class="story-title">Peanuts x Timex</span>-->
+<!--            <p class="story-price">$119.00</p>-->
+<!--            <a href="#" class="shop-btn">Shop Now →</a>-->
+<!--        </div>-->
+<!--        <div class="story-img-box">-->
+<!--            <img src="/images/story-2.jpg" alt="Peanuts x Timex">-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    &lt;!&ndash; Քարտ 2: Todd Snyder x Timex &ndash;&gt;-->
+<!--    <section class="story-section" id="story-2">-->
+<!--        <div class="story-content">-->
+<!--            <span class="story-title">Todd Snyder x Timex</span>-->
+<!--            <p class="story-price">$199.00</p>-->
+<!--            <a href="#" class="shop-btn">Shop Now →</a>-->
+<!--        </div>-->
+<!--        <div class="story-img-box">-->
+<!--            <img src="/images/story-3.jpg" alt="Todd Snyder x Timex">-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    &lt;!&ndash; Քարտ 3: Waterbury Heritage &ndash;&gt;-->
+<!--    <section class="story-section" id="story-3">-->
+<!--        <div class="story-content">-->
+<!--            <span class="story-title">Waterbury Heritage</span>-->
+<!--            <p class="story-price">$309.00</p>-->
+<!--            <a href="#" class="shop-btn">Shop Now →</a>-->
+<!--        </div>-->
+<!--        <div class="story-img-box">-->
+<!--            <img src="/images/story-1.jpg" alt="Waterbury Heritage">-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Footer Section &ndash;&gt;-->
+<!--<footer class="footer">-->
+<!--    &lt;!&ndash; Վերին մաս՝ Քաղաքների ժամեր &ndash;&gt;-->
+<!--    <div class="footer-top">-->
+<!--        <div class="footer-logo">TIMEX</div>-->
+<!--        <div class="footer-cities">-->
+<!--            <div class="city-item"><span>🕒</span> New York City</div>-->
+<!--            <div class="city-item"><span>🕒</span> Los Angeles</div>-->
+<!--            <div class="city-item"><span>🕒</span> London</div>-->
+<!--            <div class="city-item"><span>🕒</span> Tokyo</div>-->
+<!--            <div class="city-item"><span>🕒</span> Paris</div>-->
+<!--            <div class="city-item"><span>🕒</span> Dubai</div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Հիմնական ֆուտեր բովանդակություն &ndash;&gt;-->
+<!--    <div class="footer-main">-->
+<!--        &lt;!&ndash; Ձախ մաս՝ Նորություններ և բաժանորդագրություն &ndash;&gt;-->
+<!--        <div class="footer-subscribe">-->
+<!--            <p>Be the first to know and receive <strong>15% off</strong> an order</p>-->
+<!--            <form class="subscribe-form" onsubmit="event.preventDefault();">-->
+<!--                <input type="email" placeholder="Email Address" required>-->
+<!--                <button type="submit">Subscribe</button>-->
+<!--            </form>-->
+<!--            <p class="privacy-text">-->
+<!--                By submitting your email address you are agreeing to the <a href="#">Privacy Policy</a> and <a href="#">Terms & Conditions</a>.-->
+<!--            </p>-->
+<!--            <div class="payment-icons">-->
+<!--                <span>AMEX</span>-->
+<!--                <span>VISA</span>-->
+<!--                <span>MC</span>-->
+<!--                <span>PP</span>-->
+<!--                <span>PAY</span>-->
+<!--                <span>Klarna</span>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Մեջտեղի մաս՝ Մենյուներ &ndash;&gt;-->
+<!--        <div class="footer-links-group">-->
+<!--            <div class="footer-dropdown">-->
+<!--                <span>Discover</span>-->
+<!--                <span>v</span>-->
+<!--            </div>-->
+<!--            <div class="footer-dropdown">-->
+<!--                <span>Shop</span>-->
+<!--                <span>v</span>-->
+<!--            </div>-->
+<!--            <div class="footer-dropdown">-->
+<!--                <span>Support</span>-->
+<!--                <span>v</span>-->
+<!--            </div>-->
+<!--            <div class="footer-dropdown">-->
+<!--                <span>Information</span>-->
+<!--                <span>v</span>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Աջ մաս՝ Սոցիալական ցանցեր &ndash;&gt;-->
+<!--        <div class="footer-socials">-->
+<!--            <a href="#">Instagram</a>-->
+<!--            <a href="#">Facebook</a>-->
+<!--            <a href="#">Tiktok</a>-->
+<!--            <a href="#">X</a>-->
+<!--            <a href="#">Youtube</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+
+<!--<script src="/js/script.js"></script>-->
+<!--</body>-->
+<!--</html>-->

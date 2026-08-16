@@ -1,0 +1,162 @@
+/* =========================================
+   Footer Section
+   ========================================= */
+.footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 80px 40px 80px;
+    position: relative;
+    z-index: 5;
+    border-left: 8px solid #ffffff;
+    border-right: 8px solid #ffffff;
+    border-bottom: 8px solid #ffffff;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.footer-cities {
+    display: flex;
+    gap: 40px;
+}
+
+.city-item {
+    font-size: 13px;
+    color: #cccccc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 1px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-subscribe {
+    max-width: 450px;
+}
+
+.footer-subscribe p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.subscribe-form input::placeholder {
+    color: #888888;
+}
+
+.subscribe-form button {
+    background-color: #222222;
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 0 25px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.privacy-text {
+    font-size: 11px;
+    color: #888888;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.privacy-text a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    color: #888888;
+}
+
+.payment-icons span {
+    background-color: #1a1a1a;
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: 1px solid #333333;
+}
+
+.footer-links-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 200px;
+}
+
+.footer-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 15px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: opacity 0.3s;
+}
+
+.footer-dropdown:hover {
+    opacity: 0.7;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: opacity 0.3s;
+}
+
+.footer-socials a:hover {
+    opacity: 0.7;
+}

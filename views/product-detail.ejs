@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timex® Automatic E Line</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Նավիգացիա -->
+<%- include('partials/header') %>
+
+<!-- Վերևի հիմնական բաժին (Մեծ նկարը և աջի ինֆորմացիան) -->
+<div class="product-detail-container">
+    <!-- Ձախ մասում մեծ նկարը -->
+    <div class="product-image-section">
+        <img id="main-product-img" src="/images/products/watch-1-large.png" alt="Timex Automatic E Line">
+    </div>
+
+    <!-- Աջ մասում՝ բնութագրերը և գինը -->
+    <div class="product-info-section">
+        <div style="font-size: 11px; color: #666; margin-bottom: 5px;">
+            <a href="/" style="text-decoration: none; color: #666;">Home</a> > New Arrivals >
+        </div>
+        <h2 style="font-size: 20px; font-weight: 700; margin-bottom: 5px;">Timex® Automatic E Line</h2>
+        <p style="font-size: 13px; color: #666; margin-bottom: 15px;">38mm Stainless Steel Bracelet Watch</p>
+
+        <div>
+            <span style="background: #000; color: #fff; font-size: 10px; padding: 2px 6px; margin-right: 5px;">New</span>
+            <span style="background: #333; color: #fff; font-size: 10px; padding: 2px 6px;">Sustainable</span>
+        </div>
+
+        <!-- Փոքրիկ նկարների ընտրությունը (Thumbnails) -->
+        <div class="mini-thumbs">
+            <img src="/images/products/watch-detail-1.png" alt="" class="active">
+            <img src="/images/products/watch-detail-2.png" alt="">
+            <img src="/images/products/watch-detail-3.png" alt="">
+        </div>
+
+        <div style="font-size: 12px; color: #333; margin-bottom: 15px; display: flex; gap: 15px;">
+            <span><i class="fa-solid fa-gear"></i> Mechanical Automatic Movement</span>
+            <span><i class="fa-regular fa-calendar"></i> Date Window</span>
+        </div>
+
+        <div style="font-size: 22px; font-weight: 700; margin-bottom: 15px;">$399.00</div>
+
+        <!-- Add to Bag կոճակ -->
+        <button class="add-to-bag-btn">
+            <span><i class="fa-regular fa-heart" style="margin-right: 10px;"></i> Add to Bag</span>
+            <span>→</span>
+        </button>
+
+        <!-- Լրացուցիչ ընտրանքներ (Try it on, Compare, etc.) -->
+        <div class="action-row">
+            <span>Try It On</span>
+            <span><i class="fa-solid fa-camera"></i> Compare ⇄</span>
+        </div>
+        <div class="action-row">
+            <span>Delivery, Returns & Warranty</span>
+            <span>⌄</span>
+        </div>
+        <div class="action-row">
+            <span>Product User Manual</span>
+            <span><i class="fa-solid fa-download"></i></span>
+        </div>
+    </div>
+</div>
+
+<!-- ՆԵՐՔԵՎԻ ՀՈՐԻԶՈՆԱԿԱՆ ՍԵԿՑԻԱ՝ Բոլոր նկարները իրար կողք շարված -->
+<div class="bottom-gallery-section">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="/images/products/watch-detail-1.png" alt="Watch Front" class="clickable-gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="/images/products/watch-detail-2.png" alt="Watch on Wrist" class="clickable-gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="/images/products/watch-detail-3.png" alt="Watch Side" class="clickable-gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="/images/products/watch-detail-4.png" alt="Watch Back" class="clickable-gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="/images/products/watch-detail-5.png" alt="Watch Movement" class="clickable-gallery-img">
+        </div>
+    </div>
+</div>
+
+<section class="expression-section">
+
+    <div class="expression-header">
+        <h2>The Quintessential Expression of Timex Watchmaking</h2>
+    </div>
+
+    <div class="expression-grid">
+
+        <!-- Ձախ՝ մեծ -->
+        <div class="expr-item item-left">
+            <img src="/images/products/expr-4.png" alt="Man in Library">
+        </div>
+
+        <!-- Կենտրոն՝ վերև -->
+        <div class="expr-item item-center-top">
+            <img src="/images/products/expr-2.png" alt="Vintage Artwork">
+        </div>
+
+        <!-- Կենտրոն՝ ներքև -->
+        <div class="expr-item item-center-bottom">
+            <img src="/images/products/expr-5.png" alt="Clock Tower">
+        </div>
+
+        <!-- Աջ՝ մեծ -->
+        <div class="expr-item item-right">
+            <img src="/images/products/expr-6.png" alt="Man on Couch">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Promise & Planet Section -->
+<section class="promise-section">
+
+    <!-- Ձախ քարտ -->
+    <div class="promise-card">
+
+        <img
+                src="/images/products/promise-bg.png"
+                alt="Our Promise"
+                class="promise-bg"
+        >
+
+        <div class="promise-content">
+            <h2>
+                Our Promise for the Next<br>
+                170 Years
+            </h2>
+
+            <p>
+                Since 1854, no other watchmaker has ever been able to match
+                our ability to put a well-crafted watch on your wrist, while
+                leaving money in your pocket. Every Timex is a testament to
+                our legendary durability and value, and a reminder to make
+                time yours.
+            </p>
+
+            <a href="#" class="promise-btn">
+                <span>Read more about us</span>
+                <span>→</span>
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- Աջ քարտ -->
+    <div class="planet-card">
+
+        <img
+                src="/images/products/planet-tick-bg.png"
+                alt="Planet"
+                class="planet-bg"
+        >
+
+        <div class="planet-content">
+            <h2>
+                Crafted to Keep Our<br>
+                Planet Ticking
+            </h2>
+
+            <p>
+                We are proud pioneers in making timeless watches that are
+                environmentally-friendly, beautifully crafted and can take
+                a licking and keep on ticking.
+            </p>
+
+            <a href="#" class="promise-btn">
+                <span>Read more about our goals</span>
+                <span>→</span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="qa-section">
+    <div class="qa-container">
+        <h2 class="qa-title">Questions & Answers</h2>
+
+        <div class="qa-content">
+            <h3 class="qa-subtitle">Have a question?</h3>
+            <p class="qa-text">Be the first to ask something about this product.</p>
+            <button class="qa-button" type="button">Ask a question</button>
+        </div>
+    </div>
+</section>
+
+<!-- Ֆուտեր -->
+<%- include('partials/footer') %>
+
+<!-- Կապում ենք առանձին JavaScript ֆայլը -->
+<script src="/js/product-gallery.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

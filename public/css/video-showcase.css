@@ -1,0 +1,92 @@
+/* =========================================
+   Interactive Showcase Section (Video Background)
+   ========================================= */
+.interactive-showcase {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+    background-color: #000000;
+    border-left: 8px solid #ffffff;
+    border-right: 8px solid #ffffff;
+    border-bottom: 8px solid #ffffff;
+}
+
+.showcase-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.showcase-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+
+.showcase-content-wrapper {
+    position: relative;
+    z-index: 10;
+    margin-right: 50px;
+}
+
+.showcase-card {
+    background-color: #ffffff;
+    width: 380px;
+    padding: 35px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase-img-box {
+    width: 100%;
+    height: 320px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.showcase-img-box img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.showcase-card:hover .showcase-img-box img {
+    transform: scale(1.05);
+}
+
+.showcase-info h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.showcase-specs {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.showcase-price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+}
