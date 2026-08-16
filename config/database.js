@@ -1,15 +1,11 @@
 const { Sequelize } = require('sequelize');
-require('dotenv').config();
+const path = require('path');
 
-const sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
-    {
-        host: process.env.DB_HOST,
-        dialect: process.env.DB_DIALECT,
-        logging: false
-    }
-);
+// SQLite-ի դեպքում բազան կպահպանվի պրոեկտի ներսում գտնվող database.sqlite ֆայլում
+const sequelize = new Sequelize({
+    dialect: 'sqlite',
+    storage: path.join(__dirname, '../database.sqlite'),
+    logging: false
+});
 
 module.exports = sequelize;
