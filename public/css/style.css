@@ -8,7 +8,28 @@
 @import "story.css";
 @import "footer.css";
 
+/* Համակարգչի և մեծ էկրանների համար */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
 
+/* Հեռախոսների համար (մինչև 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Տարրերը դասավորել իրար տակ */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px; /* Փոքրացնել վերնագրի չափը հեռախոսում */
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 
