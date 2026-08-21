@@ -189,6 +189,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+// =========================
+// AUTH MODAL
+// =========================
 document.addEventListener("DOMContentLoaded", () => {
     const authModal = document.getElementById("authModal");
     const closeAuthModal = document.getElementById("closeAuthModal");
@@ -196,12 +199,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const forms = document.querySelectorAll(".auth-form");
     const openTrigger = document.querySelector(".fa-user") || document.querySelector(".nav-right a:nth-child(2)");
 
-    // --- ՆՈՐ ՖՈՒՆԿՑԻԱ. Էջը բացվելուն պես միանգամից ցույց տալ գրանցման պատուհանը ---
     if (authModal) {
         authModal.classList.add("active");
     }
 
-    // Բացել պատուհանը օգտատիրոջ նշանի վրա սեղմելիս
     if (openTrigger) {
         openTrigger.addEventListener("click", (e) => {
             e.preventDefault();
@@ -209,21 +210,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Փակել X կոճակով
     if (closeAuthModal) {
         closeAuthModal.addEventListener("click", () => {
             authModal.classList.remove("active");
         });
     }
 
-    // Փակել դրսի մուգ ֆոնին սեղմելիս
     window.addEventListener("click", (e) => {
         if (e.target === authModal) {
             authModal.classList.remove("active");
         }
     });
 
-    // Sign In / Register տաբերի փոխարկում
     tabBtns.forEach(btn => {
         btn.addEventListener("click", () => {
             tabBtns.forEach(b => b.classList.remove("active"));
@@ -233,4 +231,19 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById(btn.dataset.target).classList.add("active");
         });
     });
+});
+
+// =========================
+// HAMBURGER MOBILE MENU
+// =========================
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navLinksContainer = document.getElementById('nav-links-container');
+
+    if (hamburgerMenu && navLinksContainer) {
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('open');
+            navLinksContainer.classList.toggle('active');
+        });
+    }
 });

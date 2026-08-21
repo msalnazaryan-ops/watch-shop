@@ -31,6 +31,45 @@ img {
     height: auto;
 }
 
+/* ՀԵՌԱԽՈՍՆԵՐԻ ՀԱՄԱՐ (մինչև 768px) */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Բացվում է հեռախոսում */
+    }
+
+    /* Թաքցնում ենք մենյուի պարունակությունը ըստ լռության */
+    .nav-links-container {
+        display: none;
+        position: absolute;
+        top: 70px; /* Կարգավորեք ըստ ձեր հեդերի բարձրության */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column; /* Բացվելիս իրար տակ են */
+        padding: 20px 0;
+        border-top: 1px solid #eee;
+        z-index: 1000;
+    }
+
+    /* Ավելացնում ենք կլաս, որը ցույց է տալիս, որ մենյուն բացված է */
+    .nav-links-container.active {
+        display: flex;
+    }
+
+    /* Մենյուի կետերի իրար տակ շարվելը հեռախոսում */
+    .nav-left,
+    .nav-right {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .logo {
+        margin-bottom: 15px;
+    }
+}
+
 
 
 

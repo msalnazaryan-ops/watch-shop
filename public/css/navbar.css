@@ -784,3 +784,26 @@ header.scrolled #userDisplayContainer .nav-link {
         padding: 15px !important;
     }
 }
+
+/* Բուրգեր կոճակ (սկզբում թաքնված է) */
+.hamburger-menu {
+    display: none; /* Համակարգչում չի երևում */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+/* Նոր կոնտեյներ, որը փաթաթում է ամբողջ մենյուն */
+.nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
